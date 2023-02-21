@@ -1,4 +1,5 @@
 import { totalPrice } from './task-2.js'
+import { normalizeData, posts } from './task-3.js'
 
 console.log(
 	'task-2',
@@ -9,3 +10,5 @@ console.log(
 		months: 12,
 	}),
 )
+
+console.log('task-3', normalizeData(posts))
