@@ -5,8 +5,11 @@ const fetch = (url: RequestInfo, init?: RequestInit) =>
 const COMMENTS_URL = 'https://jsonplaceholder.typicode.com/comments'
 
 interface Comment {
+	postId: number
 	id: number
 	email: string
+	name: string
+	body: string
 }
 
 const getData = async (url: string): Promise<Comment[]> => {
